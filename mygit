@@ -1,0 +1,9 @@
+echo filename $1
+echo git commit -m "$2"
+if [ -f $1 ]
+then git add --all
+     git commit -m "test"
+     git push 
+else 
+echo file not found
+fi
